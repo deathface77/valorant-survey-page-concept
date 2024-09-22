@@ -1,0 +1,186 @@
+ <!DOCTYPE html>
+ <html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <meta name="author" content="Aldwight Hazelnut">
+    <meta name="description" content="Valorant Player Satisfactory Survey">
+    <meta name="publisher" content="Death_Face77 Production">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="asset/valorant_ico.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>VALORANT | Player Satisfactory Survey Page</title>
+
+</head>
+<body>
+    <div class="content">
+    <header>
+        <h1 id="title">VALORANT's Player Survey</h1>
+        <p id="description"><i>Player's Satisfactory Survey</i></p>
+    </header>
+    </div>
+    <section class="container">
+    <form id="survey-form">
+        <div class="container-grid">
+            <label  id="name-label">Player ID</label><br>
+            <input id="name" type="text" placeholder="Insert Your Player ID Here" required>
+        </div><br>
+        <div class="container-grid">
+            <label id="email-label">E-mail</label><br>
+            <input id="email" type="email" name="email" placeholder="Insert Your Riot Account E-mail Here" required>
+        </div><br>        
+        <div>
+            <label id="number-label">ID Number</label><br>
+            <input name="number" id="number" type="number" inputmode="numeric" placeholder="xxxx" max="9999" min="0000" maxlength="4" placeholder="Insert Your ID Number Here" required>
+        </div><br>
+        <div>
+            <label id="label-dropdown">Current Rank</label>
+            <select id= dropdown type="drop" required>
+                <optgroup label="Iron">
+                    <option value="iron 1">Iron 1</option>
+                    <option value="iron 2">Iron 2</option>
+                    <option value="iron 3">Iron 3</option>
+                </optgroup>
+                <optgroup label="Bronze">
+                    <option value="bronze 1">Bronze 1</option>
+                    <option value="bronze 2">Bronze 2</option>
+                    <option value="bronze 3">Bronze 3</option>
+                </optgroup>
+                <optgroup label="Silver">
+                    <option value="silver 1">Silver 1</option>
+                    <option value="silver 2">Silver 2</option>
+                    <option value="silver 3">Silver 3</option>
+                </optgroup>
+                <optgroup label="Gold">
+                    <option value="gold 1">Gold 1</option>
+                    <option value="gold 2">Gold 2</option>
+                    <option value="gold 3">Gold 3</option>
+                </optgroup>
+                <optgroup label="Platinum">
+                    <option value="platinum 1">Platinum 1</option>
+                    <option value="platinum 2">Platinum 2</option>
+                    <option value="platinum 3">Platinum 3</option>
+                </optgroup>
+                <optgroup label="Diamond">
+                    <option value="diamond 1">Diamond 1</option>
+                    <option value="diamond 2">Diamond 2</option>
+                    <option value="diamond 3">Diamond 3</option>
+                </optgroup>
+                <optgroup label="Ascendant">
+                    <option value="ascendant 1">Ascendant 1</option>
+                    <option value="ascendant 2">Ascendant 2</option>
+                    <option value="ascendant 3">Ascendant 3</option>
+                </optgroup>
+                <optgroup label="Immortal">
+                    <option value="immortal 1">Immortal 1</option>
+                    <option value="immortal 2">Immortal 2</option>
+                    <option value="immortal 3">Immortal 3</option>
+                </optgroup>
+                <optgroup label="Radiant">
+                    <option value="radiant">Radiant</option>
+                </optgroup>
+            </select>
+        </div><br>
+        <div class="input-container">
+            <label id="label-radio">Gender:</label><br>
+            <input name="gender" value="male" type="radio">Male
+            <input name="gender" value="female" type="radio">Female
+            <input name="gender" value="not to say" type="radio">Not to Say
+        </div><br>
+        <div class="input-container">
+            <label>How's your experience when playing in the new map Abyss?</label><br>
+            <input value="Amazing" name="prefer" type="checkbox">Amazing<br>
+            <input value="Good" name="prefer" type="checkbox">Good<br>
+            <input value="Neutral" name="prefer" type="checkbox">Neutral<br>
+            <input value="Awful" name="prefer" type="checkbox">Awful<br>
+            <input value="Horrible" name="prefer" type="checkbox">Horrible<br>
+        </div><br>
+        <div>
+            <label>What do you think how we can improve Abyss map in the future?</label><br>
+            <input value="Amazing" name="prefer" type="checkbox">Amazing<br>
+            <input value="Good" name="prefer" type="checkbox">Good<br>
+            <input value="Neutral" name="prefer" type="checkbox">Neutral<br>
+            <input value="Awful" name="prefer" type="checkbox">Awful<br>
+            <input value="Horrible" name="prefer" type="checkbox">Horrible<br>
+            <input value="Opinion" name="prefer" type="textarea" placeholder="Write Down Your Opinion"><br>
+        </div><br>
+        <div>
+            <label>Do you think all maps considered balanced?</label><br>
+            <input value="Completely-agree" name="prefer" type="checkbox">Completely Agree<br>
+            <input value="Agree" name="prefer" type="checkbox">Agree<br>
+            <input value="Neutral" name="prefer" type="checkbox">Neutral<br>
+            <input value="Disagree" name="prefer" type="checkbox">Disagree<br>
+            <input value="Very-Disagree" name="prefer" type="checkbox">Very Disagree<br>
+        </div><br>
+        <div>
+            <label>What do you think is the most unbalanced map in Valorant? (Max 3)</label><br>
+            <input value="ascent" name="game-map" type="checkbox">Ascent<br>
+            <input value="abyss" name="game-map" type="checkbox">Abyss<br>
+            <input value="bind" name="game-map" type="checkbox">Bind<br>
+            <input value="breeze" name="game-map" type="checkbox">Breeze<br>
+            <input value="fracture" name="game-map" type="checkbox">Fracture<br>
+            <input value="haven" name="game-map" type="checkbox">Haven<br>
+            <input value="icebox" name="game-map" type="checkbox">Icebox<br>
+            <input value="lotus" name="game-map" type="checkbox">Lotus<br>
+            <input value="split" name="game-map" type="checkbox">Split<br>
+        </div><br>
+        <div>
+            <label>Do you think all guns considered balanced?</label><br>
+            <input value="Completely-agree" name="prefer" type="checkbox">Completely Agree<br>
+            <input value="Agree" name="prefer" type="checkbox">Agree<br>
+            <input value="Neutral" name="prefer" type="checkbox">Neutral<br>
+            <input value="Disagree" name="prefer" type="checkbox">Disagree<br>
+            <input value="Very-Disagree" name="prefer" type="checkbox">Very Disagree<br>
+        </div><br>
+        <div>
+            <label>Do you think all agents considered balanced?</label><br>
+            <input value="Completely-agree" name="prefer" type="checkbox">Completely Agree<br>
+            <input value="Agree" name="prefer" type="checkbox">Agree<br>
+            <input value="Neutral" name="prefer" type="checkbox">Neutral<br>
+            <input value="Disagree" name="prefer" type="checkbox">Disagree<br>
+            <input value="Very-Disagree" name="prefer" type="checkbox">Very Disagree<br>
+        </div><br>
+        <div>
+            <label>How was your experience when playing as Vyse?</label><br>
+            <input value="Amazing" name="prefer" type="checkbox">Amazing<br>
+            <input value="Good" name="prefer" type="checkbox">Good<br>
+            <input value="Neutral" name="prefer" type="checkbox">Neutral<br>
+            <input value="Awful" name="prefer" type="checkbox">Awful<br>
+            <input value="Horrible" name="prefer" type="checkbox">Horrible<br>
+        </div><br>
+        <div>
+            <label>How was your experience in matchmaking recently?</label><br>
+            <input value="Amazing" name="prefer" type="checkbox">Amazing<br>
+            <input value="Good" name="prefer" type="checkbox">Good<br>
+            <input value="Neutral" name="prefer" type="checkbox">Neutral<br>
+            <input value="Awful" name="prefer" type="checkbox">Awful<br>
+            <input value="Horrible" name="prefer" type="checkbox">Horrible<br>
+        </div><br>
+        <div>
+            <label id="new-feature">What do you think we should add in Valorant?</label><br>
+            <input value="replay-system" name="prefer" type="checkbox">Replay System<br>
+            <input value="balanced-map-redesign" name="prefer" type="checkbox">More Balanced Map Design and Redesign<br>
+            <input value="more-good-bp-skin" name="prefer" type="checkbox">More Good BP Skins<br>
+            <input value="balancing-guns" name="prefer" type="checkbox">Re-Balanced The Guns<br>
+            <input value="fix-the-matchmaking" name="prefer" type="checkbox">Fixing The Matchmaking<br>
+            <input value="new-map" name="prefer" type="checkbox">Adding New Fun to Play Map<br>
+            <input value="new-gun" name="prefer" type="checkbox">Adding a New Gun to Choose<br>
+            <input value="feature-idea" name="prefer" type="textarea" placeholder="Write Down Your Opinion"><br>
+        </div><br>
+        <div>
+            <label>What do you think we can do to improve our game in your opinion?</label><br>
+            <textarea value="Opinion" id="idea" placeholder="Write Down Your Opinion"></textarea><br>
+        </div>
+        <div>
+            <button id="submit">Submit</button>
+        </div>
+    </form>
+    </section>
+</body>
+</html>
+ 
