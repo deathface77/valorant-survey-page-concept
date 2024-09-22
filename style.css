@@ -44,7 +44,7 @@
     max-width: var(--max-width);
     margin: auto;
     line-height:1.5;
-    background-color: rgba(15, 25, 35, 1);
+    background-color: rgba(26, 17, 43, 1);
     padding-left: 25px;
     padding-right: 25px;
     border-radius: 10px,10px, 0px, 0px;
@@ -55,7 +55,7 @@
     max-width: var(--max-width);
     margin: auto;
     line-height:1.5;
-    background-color: rgba(15, 25, 35, 0.94);
+    background-color: rgba(18, 12, 29, 0.91);
     padding-left: 25px;
     padding-right: 25px;
     border-radius: 0px, 0px, 5px, 5px;
